@@ -22,10 +22,13 @@ const createTables = async () => {
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             );
             `)
+        
         console.log('Tables created successfully');
+
     } catch (error) {
         console.error('Error creating tables:', error);
         throw error;
+        
     } finally {
         pool.end();
     }
