@@ -1,8 +1,7 @@
 import { pool } from '../config/db';
 import { User } from '../models/user';
 
-export async function createUser(user: User): Promise<User> {
-    const { email } = user;
+export async function createUser(email: string): Promise<User> {
     
     const query = `
         INSERT INTO users (email)
