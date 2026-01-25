@@ -3,6 +3,8 @@ import dotenv from 'dotenv';
 import rateRoutes from './routes/rateRoutes';
 import userRoutes from './routes/userRoutes';
 import favoriteRoutes from './routes/favoriteRoutes';
+import './config/redis';
+
 dotenv.config();
 
 const app = express();

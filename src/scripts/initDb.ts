@@ -6,7 +6,7 @@ const createTables = async () => {
         await pool.query('DROP TABLE IF EXISTS users CASCADE');
         await pool.query('DROP TABLE IF EXISTS rates CASCADE');
 
-        console.log('🏗️  Creating new tables...');
+        console.log('Creating new tables...');
 
         await pool.query(`
             CREATE TABLE IF NOT EXISTS users (
